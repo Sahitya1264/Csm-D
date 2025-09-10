@@ -1,6 +1,3 @@
-Sure! Here's a simple **random guessing game** in Python where the computer picks a random number, and the user tries to guess it:
-
-```python
 import random
 
 def guessing_game():
@@ -30,3 +27,4 @@ if __name__ == "__main__":
 ```
 
 Would you like me to explain how it works or add any features?
+
