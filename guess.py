@@ -1,30 +1,16 @@
 import random
 
-def guessing_game():
-    number_to_guess = random.randint(1, 100)  # Random number between 1 and 100
-    attempts = 0
+n = random.randrange(1,100)
+guess = int(input("Enter any number: "))
+while n!= guess:
 
-    print("Welcome to the Guessing Game!")
-    print("I'm thinking of a number between 1 and 100.")
-
-    while True:
-        try:
-            guess = int(input("Take a guess: "))
-            attempts += 1
-
-            if guess < number_to_guess:
-                print("Too low! Try again.")
-            elif guess > number_to_guess:
-                print("Too high! Try again.")
-            else:
-                print(f"Congrats! You guessed the number in {attempts} attempts.")
-                break
-        except ValueError:
-            print("Please enter a valid integer.")
-
-if __name__ == "__main__":
-    guessing_game()
-```
-
-Would you like me to explain how it works or add any features?
+    if guess < n:
+        print("Too low")
+        guess = int(input("Enter number again: "))
+    elif guess > n:
+        print("Too high!")
+        guess = int(input("Enter number again: "))
+    else:
+        break
+print("you guessed it right!!")
 
